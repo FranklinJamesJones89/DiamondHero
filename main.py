@@ -10,6 +10,7 @@ pygame.init()
 
 # Define screen and frames per second
 screen = pygame.display.set_mode((screen_width, screen_height))
+pygame.display.set_caption('Diamond')
 clock = pygame.time.Clock()
 
 # Instances
