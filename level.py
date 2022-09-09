@@ -59,6 +59,8 @@ class Level(pygame.sprite.Sprite):
 
         if player.on_left and (player.rect.left < self.current_x or player.direction.x >= 0):
             player.on_left = False
+        if player.on_right and (player.rect.right > self.current_x or player.direction.x <= 0):
+            player.on_right = False
         
 
     def vertical_movement_collision(self):
@@ -80,6 +82,8 @@ class Level(pygame.sprite.Sprite):
             player.on_ground = False
         if player.on_ceiling and player.direction.y > 0:
             player.on_ceiling = False
+
+
 
     def run(self):
         # Level tilles
