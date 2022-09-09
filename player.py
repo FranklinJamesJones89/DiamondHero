@@ -1,3 +1,4 @@
+#! python3
 import pygame
 from support import import_folder
 
