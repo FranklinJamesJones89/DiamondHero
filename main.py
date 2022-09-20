@@ -15,6 +15,7 @@ clock = pygame.time.Clock()
 
 # Instances
 level = Level(level_map, screen)
+print('hello')
 
 # Main game loop
 while True:
